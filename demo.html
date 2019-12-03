@@ -183,6 +183,7 @@ startButton.addEventListener('click', async () => {
     device = await navigator.usb.requestDevice({ filters: [{
       vendorId: 0x054c,
       //protocolCode: 0x06C3   //0x01
+	  
 	  productId: 0x06C3
     }]});
     console.log("open");
